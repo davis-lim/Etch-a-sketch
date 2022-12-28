@@ -49,14 +49,18 @@ function getSize(){
     }
 }
 
+function chooseColor(){
+    color = window.prompt("Enter your preferred color!")
+}
+
 //Choose the color
 function colorDiv(){
     if(click){
         if (color == "random" ){
             this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`
         }
-        else{
-            this.style.backgroundColor = "black";
+        else {
+            this.style.backgroundColor = `${color}`;
         }
     }
 }
